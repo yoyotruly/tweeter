@@ -5,21 +5,26 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding-bottom: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 nav h1 {
   font-family: 'Bungee', cursive;
-  font-size: 50px;
-  margin-left: 1.5em;
+  font-size: 45px;
+  margin-bottom: 0.5em;
 }
 
 nav ul {
   list-style: none;
-  margin-right: 1.5em;
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
 nav strong {
   font-weight: bold;
+}
+
+.fa-angles-down {
+  color: red;
 }
