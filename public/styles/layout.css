@@ -21,6 +21,13 @@ body {
   font-size: 24px;
 }
 
+main {
+  background-color: #f5f2ed;
+  width: 90%;
+  margin: auto;
+}
+
+/* Global styles */
 b {
   font-weight: bold;
 }
