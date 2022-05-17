@@ -1,55 +1,60 @@
-.tweets article {
-  border: 3px solid gray;
+.tweet {
+  border: 3px solid dimgray;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
 }
 
-.tweets article:hover {
+.tweet:hover {
   box-shadow: 5px 5px #4057a175;
 }
 
-.tweets header {
+.tweet > * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.tweet header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.tweets .user {
+.tweet__user {
   display: flex;
   align-items: center;
 }
 
-.tweets .user > * {
+.tweet__user > * {
   margin-right: 10px;
 }
 
-.tweets .user img {
+.tweet__user img {
   height: 2em;
 }
 
-.tweets footer {
+.tweet__handle {
+  color: #4057a175;
+}
+
+.tweet__text {
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-bottom: 3px solid dimgray;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.tweet footer {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
 }
 
-.tweets .tweet {
-  font-weight: 600;
-  margin-bottom: 10px;
-  border-bottom: 3px solid gray;
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-
-.tweets article footer i {
+.tweet footer i {
   margin: 3px;
 }
 
-.tweets article footer i:hover {
+.tweet footer i:hover {
   color: goldenrod;
-}
-
-.tweets .handle {
-  color: #4057a175;
 }
