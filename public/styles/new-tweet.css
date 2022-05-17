@@ -10,6 +10,7 @@ form {
 #tweet-text {
   height: 25px;
   border: none;
+  outline: none;
   background-color: inherit;
   border-bottom: 5px solid gray;
   resize: none;
