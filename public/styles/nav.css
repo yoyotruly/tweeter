@@ -1,5 +1,8 @@
 nav {
   height: 120px;
+  width: 100%;
+  position: fixed;
+  top: 0;
   background: #4056A1;
   color: #FFFFFF;
   display: flex;
