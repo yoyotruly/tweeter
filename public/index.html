@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css">
     <link rel="stylesheet" href="/styles/header.css" type="text/css">
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css">
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css">
+
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -38,7 +40,7 @@
       </ul>
     </nav>
 
-    <header>
+    <header class="page-header">
       <div class="avatar", id="avatar">
         <img src="/images/profile-hex.png"> 
       </div>
@@ -61,13 +63,39 @@
         </form>
       </section>
 
-      <section class="tweets-list">
-        <h2>Weather</h2>
-        <p>How's the weather today?</p>
-        <h2>Play</h2>
-        <p>My dog loves playing tennis balls</p>
-        <h2>Doggo</h2>
-        <p>Hot dawg</p>
+      <section class="tweets">
+        <article>
+          <header>
+            <div>Rhona</div>
+            <div class="handle">@rohna</div>
+          </header>
+          <p>Hello World!</p>
+          <footer>
+            <time>10 days ago</time>
+            <div>
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+
+        <article>
+          <header>
+            <div>Newton</div>
+            <div class="handle">@SirIsaac</div>
+          </header>
+          <p>If I have seen it further, it is because I'm standing on the shoulder of the giants.</p>
+          <footer>
+            <time>10 days ago</time>
+            <div>
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-solid fa-heart"></i>
+            </div>
+          </footer>
+        </article>
+
       </section>
     </main>
   </body>

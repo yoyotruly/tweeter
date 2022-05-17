@@ -1,0 +1,42 @@
+.tweets article {
+  border: 3px solid gray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.tweets article:hover {
+  box-shadow: 5px 5px #4057a175;
+}
+
+.tweets header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweets footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.tweets p {
+  font-weight: 600;
+  /* height: 50px; */
+  margin-bottom: 10px;
+  border-bottom: 3px solid gray;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.tweets article footer i {
+  margin: 3px;
+}
+
+.tweets article footer i:hover {
+  color: goldenrod;
+}
+
+.tweets .handle {
+  color: #4057a175;
+}
