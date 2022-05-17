@@ -32,6 +32,7 @@
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
+  <script type="text/javascript" src="/scripts/new-tweet-char-count.js"></script>
 </head>
 
 <body>
@@ -55,18 +56,18 @@
   </header>
 
   <main>
-    <section class="new-tweet">
-      <form action="/tweets" method="post">
-        <label for="tweet-text">What are you humming about?</label>
-        <textarea name="text" id="tweet-text"></textarea>
+    <section class="new-tweet-container">
+      <form class="new-tweet" action="/tweets" method="post">
+        <label for="new-tweet__text">What are you humming about?</label>
+        <textarea name="text" id="new-tweet__text" rows=1></textarea>
         <div>
           <button type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
+          <output name="counter" class="counter" for="new-tweet__text">140</output>
         </div>
       </form>
     </section>
 
-    <section>
+    <section id="tweets-container">
       <article class="tweet">
         <header>
           <div class="tweet__user">
