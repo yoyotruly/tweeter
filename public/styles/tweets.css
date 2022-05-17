@@ -12,6 +12,20 @@
 .tweets header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.tweets .user {
+  display: flex;
+  align-items: center;
+}
+
+.tweets .user > * {
+  margin-right: 10px;
+}
+
+.tweets .user img {
+  height: 2em;
 }
 
 .tweets footer {
@@ -20,9 +34,8 @@
   font-size: 12px;
 }
 
-.tweets p {
+.tweets .tweet {
   font-weight: 600;
-  /* height: 50px; */
   margin-bottom: 10px;
   border-bottom: 3px solid gray;
   padding-top: 30px;
