@@ -13,7 +13,6 @@
 }
 
 #new-tweet__text {
-  height: 25px;
   border: none;
   outline: none;
   background-color: inherit;
@@ -21,6 +20,7 @@
   resize: none;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .new-tweet div {
