@@ -51,10 +51,10 @@
   font-size: 12px;
 }
 
-.tweet__icons {
+.tweet__icon {
   margin: 3px;
 }
 
-.tweet__icons:hover {
+.tweet__icon:hover {
   color: goldenrod;
 }
