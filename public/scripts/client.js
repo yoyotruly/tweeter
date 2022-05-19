@@ -53,40 +53,12 @@ const data = [
   }
 ];
 
-// $(document).ready(function() {
-//   renderTweets(data);
-// });
-
 renderTweets(data);
 
 
-$("#new-tweet").submit(function(event) {
+$("#new-tweet__form").submit(function(event) {
   event.preventDefault();
 
   const text = $(this).serialize();
-  $.post("/tweets", text)
-    .done(function(data) {
-      const article = `
-      <article class="tweet">
-        <header>
-          <div class="tweet__user">
-            <img src="https://i.imgur.com/nlhLi3I.png" alt="avatar">
-            <p>Rohna</p>
-          </div>
-          <div class="tweet__handle">${res.name}</div>
-        </header>
-        <p class="tweet__text">${res.text}</p>
-        <footer>
-          <time>10 days ago</time>
-          <div class="buttons">
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-retweet"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-        </footer>
-      </article>
-      `;
-
-      console.log(data);
-    });
+  $.post("/tweets", text);
 });
