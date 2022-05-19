@@ -38,32 +38,28 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <h1>tweeter</h1>
-    <ul>
+    <h1 class="logo">tweeter</h1>
+    <ul class="navbar">
       <li><b>Write</b> a new tweet</li>
       <li><i class="fa-solid fa-angles-down"></i></li>
     </ul>
   </nav>
 
-  <header class="page-header">
-    <div class="avatar" , id="avatar">
-      <img src="/images/profile-hex.png">
-    </div>
-    <br>
-    <div class="username">
-      <h2><b>Yoyo</b> Yang</h2>
-    </div>
+  <header class="header">
+    <img class="header__avatar" id="header__avatar" src="/images/profile-hex.png">
+    <h2 class="header__username"><b>Yoyo</b> Yang</h2>
   </header>
 
   <main>
-    <section class="new-tweet-container">
-      <form class="new-tweet" action="/tweets" method="post" id="new-tweet">
-        <label for="new-tweet__text">What are you humming about?</label>
-        <textarea name="text" id="new-tweet__text" rows=1></textarea>
-        <div>
-          <button type="submit">Tweet</button>
-          <output name="counter" class="counter" for="new-tweet__text">140</output>
-        </div>
+
+    <section class="new-tweet">
+      <form class="new-tweet__form" action="/tweets" method="post" id="new-tweet__form">
+        <label class="new-tweet__label" for="new-tweet__text">What are you humming about?</label>
+        <textarea class="new-tweet__text" id="new-tweet__text" name="text" rows=1></textarea>
+        <footer class="new-tweet__footer">
+          <button class="new-tweet__btn" type="submit">Tweet</button>
+          <output class="new-tweet__counter" name="counter" for="new-tweet__text">140</output>
+        </footer>
       </form>
     </section>
 

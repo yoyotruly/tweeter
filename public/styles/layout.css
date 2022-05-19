@@ -10,10 +10,6 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
   color: #545149;
   background-color: #f4f1ec;
@@ -30,5 +26,5 @@ main {
 
 /* Global styles */
 b {
-  font-weight: bold;
+  font-weight: 600;
 }

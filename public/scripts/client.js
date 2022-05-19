@@ -1,17 +1,17 @@
 const createTweetElement = (tweet) => {
   return `
     <article class="tweet">
-      <header>
+      <header class="tweet__header">
         <div class="tweet__user">
-          <img src=${tweet.user.avatars} alt="avatar">
+          <img class="tweet__avatar" src=${tweet.user.avatars} alt="user avatar">
           <p>${tweet.user.name}</p>
         </div>
         <div class="tweet__handle">${tweet.user.handle}</div>
       </header>
       <p class="tweet__text">${tweet.content.text}</p>
-      <footer>
-        <time>${tweet.created_at}</time>
-        <div>
+      <footer class="tweet__footer">
+        <time class="tweet__time">${tweet.created_at}</time>
+        <div class="tweet__icons">
           <i class="fa-solid fa-flag"></i>
           <i class="fa-solid fa-retweet"></i>
           <i class="fa-solid fa-heart"></i>
@@ -60,33 +60,33 @@ const data = [
 renderTweets(data);
 
 
-// $("#new-tweet").submit(function(event) {
-//   event.preventDefault();
+$("#new-tweet").submit(function(event) {
+  event.preventDefault();
 
-//   const text = $(this).serialize();
-//   $.post("/tweets", text)
-//     .done(function(data) {
-      // const article = `
-      // <article class="tweet">
-      //   <header>
-      //     <div class="tweet__user">
-      //       <img src="https://i.imgur.com/nlhLi3I.png" alt="avatar">
-      //       <p>Rohna</p>
-      //     </div>
-      //     <div class="tweet__handle">${res.name}</div>
-      //   </header>
-      //   <p class="tweet__text">${res.text}</p>
-      //   <footer>
-      //     <time>10 days ago</time>
-      //     <div class="buttons">
-      //       <i class="fa-solid fa-flag"></i>
-      //       <i class="fa-solid fa-retweet"></i>
-      //       <i class="fa-solid fa-heart"></i>
-      //     </div>
-      //   </footer>
-      // </article>
-      // `;
-// 
-//       console.log(data);
-//     });
-// });
+  const text = $(this).serialize();
+  $.post("/tweets", text)
+    .done(function(data) {
+      const article = `
+      <article class="tweet">
+        <header>
+          <div class="tweet__user">
+            <img src="https://i.imgur.com/nlhLi3I.png" alt="avatar">
+            <p>Rohna</p>
+          </div>
+          <div class="tweet__handle">${res.name}</div>
+        </header>
+        <p class="tweet__text">${res.text}</p>
+        <footer>
+          <time>10 days ago</time>
+          <div class="buttons">
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+      `;
+
+      console.log(data);
+    });
+});

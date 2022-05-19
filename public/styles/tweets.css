@@ -14,7 +14,7 @@
   padding-right: 10px;
 }
 
-.tweet header {
+.tweet__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,11 +26,11 @@
 }
 
 .tweet__user > * {
-  margin-right: 10px;
+  margin-right: 0.5em;
 }
 
-.tweet__user img {
-  height: 2em;
+.tweet__avatar {
+  height: 2.7em;
 }
 
 .tweet__handle {
@@ -45,16 +45,16 @@
   padding-bottom: 20px;
 }
 
-.tweet footer {
+.tweet__footer {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
 }
 
-.tweet footer i {
+.tweet__icons {
   margin: 3px;
 }
 
-.tweet footer i:hover {
+.tweet__icons:hover {
   color: goldenrod;
 }

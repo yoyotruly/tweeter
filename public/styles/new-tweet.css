@@ -1,18 +1,18 @@
-.new-tweet-container {
+.new-tweet {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.new-tweet {
+.new-tweet__form {
   display: flex;
   flex-direction: column;
 }
 
-.new-tweet label {
+.new-tweet__label {
   font-weight: 600;
 }
 
-#new-tweet__text {
+.new-tweet__text {
   border: none;
   outline: none;
   background-color: inherit;
@@ -23,14 +23,14 @@
   padding-bottom: 10px;
 }
 
-.new-tweet div {
+.new-tweet__footer {
   font-family: 'Bungee', cursive;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.new-tweet button {
+.new-tweet__btn {
   background-color: #4056A1;
   color: white;
   border: none;

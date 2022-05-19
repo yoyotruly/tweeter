@@ -1,4 +1,4 @@
-.page-header {
+.header {
   height: 400px;
   background-color: #daa520;
   display: flex;
@@ -8,14 +8,12 @@
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
-.page-header .avatar {
-  padding-top: 120px;
+.header__avatar {
+  margin-top: 130px;
+  height: 200px;
 }
 
-.page-header .avatar img {
-  height: 180px;
-}
-
-.page-header .username {
+.header__username {
   font-size: 30px;
+  margin: 0.5em 0 1em;
 }
