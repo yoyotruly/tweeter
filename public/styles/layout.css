@@ -14,14 +14,13 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-family: "Source Sans Pro", sans-serif;;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 main {
-  background-color: #f5f2ed;
   width: 90%;
+  max-width: 1800px;
   margin: auto;
-  font-size: 18px;
 }
 
 /* Global styles */
