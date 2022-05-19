@@ -21,6 +21,7 @@ nav {
 .navbar {
   list-style: none;
   text-align: center;
+  font-size: 24px;
   margin-bottom: 0.5em;
 }
 
