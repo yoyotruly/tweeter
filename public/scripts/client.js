@@ -28,16 +28,16 @@ const renderTweets = (tweets) => {
   });
 };
 
+const loadTweets = () => {
+  return $.ajax("/tweets", { method: "GET" })
+    .then((tweets) => renderTweets(tweets));
+};
+
+loadTweets();
+
 $("#new-tweet__form").submit(function(event) {
   event.preventDefault();
 
   const text = $(this).serialize();
   $.post("/tweets", text);
 });
-
-const loadTweets = () => {
-  return $.get("/tweets")
-    .then((tweets) => renderTweets(tweets));
-};
-
-loadTweets();
