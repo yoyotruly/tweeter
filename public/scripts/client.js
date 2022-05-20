@@ -1,16 +1,29 @@
+const convertText = (str) => {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+
+  return div.innerHTML;
+};
+
 const createTweetElement = (tweet) => {
+  const avatar = convertText(tweet.user.avatars);
+  const name = convertText(tweet.user.name);
+  const handle = convertText(tweet.user.handle);
+  const text = convertText(tweet.content.text);
+  const time = timeago.format(tweet.created_at);
+
   return `
     <article class="tweet">
       <header class="tweet__header">
         <div class="tweet__user">
-          <img class="tweet__avatar" src=${tweet.user.avatars} alt="user avatar">
-          <p>${tweet.user.name}</p>
+          <img class="tweet__avatar" src=${avatar} alt="user avatar">
+          <p>${name}</p>
         </div>
-        <div class="tweet__handle">${tweet.user.handle}</div>
+        <div class="tweet__handle">${handle}</div>
       </header>
-      <p class="tweet__text">${tweet.content.text}</p>
+      <p class="tweet__text">${text}</p>
       <footer class="tweet__footer">
-        <time class="tweet__time">${timeago.format(tweet.created_at)}</time>
+        <time class="tweet__time">${time}</time>
         <div>
           <i class="fa-solid fa-flag tweet__icon"></i>
           <i class="fa-solid fa-retweet tweet__icon"></i>
@@ -23,7 +36,7 @@ const createTweetElement = (tweet) => {
 
 const renderTweet = (tweet) => {
   const $tweetElement = createTweetElement(tweet);
-  $('#tweets-container').prepend($tweetElement);
+  $("#tweets-container").prepend($tweetElement);
 };
 
 const loadTweets = async (path) => {
