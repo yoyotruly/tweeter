@@ -21,23 +21,29 @@ const createTweetElement = (tweet) => {
   `;
 };
 
-const renderTweets = (tweets) => {
-  tweets.map((tweet) => {
-    const $tweetElement = createTweetElement(tweet);
-    $('#tweets-container').append($tweetElement);
-  });
+const renderTweet = (tweet) => {
+  const $tweetElement = createTweetElement(tweet);
+  $('#tweets-container').prepend($tweetElement);
 };
 
-const loadTweets = () => {
-  return $.ajax("/tweets", { method: "GET" })
-    .then((tweets) => renderTweets(tweets));
+const loadTweets = async () => {
+  const tweets = await $.ajax("/tweets", { method: "GET" });
+
+  return tweets.map((tweet) => renderTweet(tweet));
 };
+
 
 loadTweets();
 
-$("#new-tweet__form").submit(function(event) {
+$("#new-tweet__form").submit(async function(event) {
   event.preventDefault();
 
   const text = $(this).serialize();
-  $.post("/tweets", text);
+  const newTweet = await $.post("/tweets", text);
+  renderTweet(newTweet);
 });
+
+
+// const validateTweet = (tweetText) => {
+//   if (tweetText)
+// }
