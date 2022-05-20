@@ -26,14 +26,14 @@ const renderTweet = (tweet) => {
   $('#tweets-container').prepend($tweetElement);
 };
 
-const loadTweets = async () => {
-  const tweets = await $.ajax("/tweets", { method: "GET" });
+const loadTweets = async (path) => {
+  const tweets = await $.ajax(path, { method: "GET" });
 
   return tweets.map((tweet) => renderTweet(tweet));
 };
 
 
-loadTweets();
+loadTweets("/tweets");
 
 $("#new-tweet__form").submit(async function(event) {
   event.preventDefault();
@@ -41,6 +41,8 @@ $("#new-tweet__form").submit(async function(event) {
   const text = $(this).serialize();
   const newTweet = await $.post("/tweets", text);
   renderTweet(newTweet);
+
+  $("#new-tweet__form").trigger("reset");
 });
 
 
