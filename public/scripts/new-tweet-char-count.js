@@ -1,16 +1,17 @@
-$(document).ready(() => {
-  $("#new-tweet__text").on("keyup", function() {
-    const MAX_LEN = 140;
-    const currentLen = $(this).val().length;
-    const remainingLen = MAX_LEN - currentLen;
+$("#new-tweet__text").on("input paste", function() {
+  const MAX_CHAR_LEN = 140;
+  const currentLen = $(this).val().length;
+  const remainingLen = MAX_CHAR_LEN - currentLen;
 
-    const charCountElem = $(this).parent().find(".counter");
-    charCountElem.val(remainingLen);
+  const charCountElem = $(this).parent().find(".new-tweet__counter");
+  charCountElem.val(remainingLen);
 
-    if (remainingLen < 0) {
-      charCountElem.css("color", "red");
-    } else {
-      charCountElem.css("color", "inherit");
-    }
-  });
+  if (remainingLen < 0) {
+    charCountElem.css("color", "#a52828");
+    $('.new-tweet__btn').prop('disabled', true);
+  } else if (remainingLen < 10) {
+    charCountElem.css("color", "orange");
+  } else {
+    charCountElem.css("color", "inherit");
+  }
 });
