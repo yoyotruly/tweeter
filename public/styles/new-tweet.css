@@ -34,11 +34,16 @@
   background-color: #4056A1;
   color: white;
   border: none;
+  border-radius: 2px;
   padding: 0.35em 0.8em;
 }
 
 .new-tweet__btn:disabled {
   background-color: #878ea8;
+}
+
+.new-tweet__btn:hover {
+  background-color: #2c4496;
 }
 
 .new-tweet__error {

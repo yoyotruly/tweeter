@@ -1,5 +1,6 @@
 .tweet {
   border: 3px solid dimgray;
+  border-radius: 3px;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px;
