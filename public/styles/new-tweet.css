@@ -34,5 +34,17 @@
   background-color: #4056A1;
   color: white;
   border: none;
-  padding: 6px 12px;
+  padding: 0.35em 0.8em;
+}
+
+.new-tweet__btn:disabled {
+  background-color: #878ea8;
+}
+
+.new-tweet__error {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  color: #a52828;
+  margin-left: 1em;
+  margin-right: auto;
 }
