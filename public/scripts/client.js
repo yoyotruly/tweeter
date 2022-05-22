@@ -107,6 +107,7 @@ $("#new-tweet__form").submit(async function(event) {
   const newTweet = await $.post("/tweets", serializedText);
   renderTweet(newTweet);
 
-  /* clear input text area after successful submission */
+  /* clear input text area and reset counter color after successful submission */
   $(this).trigger("reset");
+  $(this).find(".new-tweet__counter").css("color", "inherit");
 });
