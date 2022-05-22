@@ -28,3 +28,11 @@ nav {
 .fa-angles-down {
   color: red;
 }
+
+.fa-angles-down:hover {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  50% {transform: translateY(15%);}
+}
