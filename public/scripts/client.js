@@ -80,6 +80,12 @@ const validateTweet = (tweetText) => {
 /* ------ Main Functions ------ */
 loadTweets("/tweets");
 
+/* toggle new tweet section */
+$("#composer").on("click", function() {
+  $("#new-tweet").toggle();
+})
+
+/* submit tweet */
 $("#new-tweet__form").submit(async function(event) {
   event.preventDefault();
   
