@@ -44,12 +44,14 @@
 
 .new-tweet__btn:hover {
   background-color: #2c4496;
+  box-shadow: 1px 1px 2px dimgray;
 }
 
 .new-tweet__error {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
-  color: #a52828;
+  font-weight: 600;
+  color: #ba3838;
   margin-left: 1em;
   margin-right: auto;
 }
