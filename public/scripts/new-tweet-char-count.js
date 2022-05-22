@@ -8,7 +8,6 @@ $("#new-tweet__text").on("input paste", function() {
 
   if (remainingLen < 0) {
     charCountElem.css("color", "#a52828");
-    $('.new-tweet__btn').prop('disabled', true);
   } else if (remainingLen < 10) {
     charCountElem.css("color", "orange");
   } else {
