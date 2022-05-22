@@ -13,4 +13,9 @@ $("#new-tweet__text").on("input paste", function() {
   } else {
     charCountElem.css("color", "inherit");
   }
+  
+  /* auto-resize text area based on user input */
+  this.style.height = "auto";
+  this.style.height = (this.scrollHeight) + "px";
+
 });
