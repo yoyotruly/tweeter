@@ -31,23 +31,6 @@
   align-items: center;
 }
 
-.new-tweet__btn {
-  background-color: #4056A1;
-  color: white;
-  border: none;
-  border-radius: 2px;
-  padding: 0.35em 0.8em;
-}
-
-.new-tweet__btn:disabled {
-  background-color: #878ea8;
-}
-
-.new-tweet__btn:hover {
-  background-color: #2c4496;
-  box-shadow: 1px 1px 2px dimgray;
-}
-
 .new-tweet__error {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
@@ -55,4 +38,32 @@
   color: #ba3838;
   margin-left: 1em;
   margin-right: auto;
+}
+
+.btn {
+  background-color: #4056A1;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #374e98;
+  box-shadow: 2px 2px dimgray;
+}
+
+.new-tweet__btn {
+  border-radius: 2px;
+  padding: 0.35em 0.8em;
+}
+
+.to-top-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
 }
