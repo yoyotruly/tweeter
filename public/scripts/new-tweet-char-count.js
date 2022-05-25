@@ -16,6 +16,6 @@ $("#new-tweet__text").on("input paste", function() {
   
   /* auto-resize text area based on user input */
   this.style.height = "auto";
-  this.style.height = (this.scrollHeight) + "px";
+  this.style.height = `${(this.scrollHeight)}px`;
 
 });
