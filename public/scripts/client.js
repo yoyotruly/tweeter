@@ -109,11 +109,15 @@ $("#new-tweet__form").submit(async function(event) {
   }
 
   /* incrementally submit and render new tweet */
-  const serializedText = $(this).serialize();
-  const newTweet = await $.post("/tweets", serializedText);
-  renderTweet(newTweet);
+  $.ajax({
+    url: "/tweets",
+    method: "POST",
+    data: $(this).serialize(),
+    success: (data) => renderTweet(data)
+  });
 
   /* clear input text area and reset counter color after successful submission */
   $(this).trigger("reset");
-  $(this).find(".new-tweet__counter").css("color", "inherit");
+  $(this).find(".new-tweet__counter")
+    .css("color", "inherit");
 });
