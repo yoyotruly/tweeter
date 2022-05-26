@@ -52,7 +52,7 @@
 
 .btn:hover {
   background-color: #374e98;
-  box-shadow: 2px 2px dimgray;
+  box-shadow: 1px 1px 1px gray;
 }
 
 .new-tweet__btn {
@@ -67,4 +67,5 @@
   position: fixed;
   bottom: 5%;
   right: 5%;
+  box-shadow: 0 0 3px gray;
 }
