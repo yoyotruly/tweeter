@@ -6,14 +6,14 @@
   justify-content: center;
   align-items: center;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
-}
 
-.header__avatar {
-  margin-top: 130px;
-  height: 200px;
-}
+  &__avatar {
+    margin-top: 130px;
+    height: 200px;
+  }
 
-.header__username {
-  font-size: 30px;
-  margin: 0.5em 0 1em;
+  &__username {
+    font-size: 30px;
+    margin: 0.5em 0 1em;
+  }
 }
