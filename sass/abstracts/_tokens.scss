@@ -3,16 +3,20 @@
 // $active-theme: $light-theme;
 
 $font-family-body: "Source Sans Pro", sans-serif;
-$font-family-heading: "Bungee", cursive;
+$font-family-logo: "Bungee", cursive;
 $font-weight-regular: 300;
 $font-weight-bold: 600;
-
-$font-size-body: 1.125rem;
+$font-size-body: 1rem;
+$font-size-heading: 1.1rem;
+$font-size-logo: 2rem;
+$font-size-footer: 0.8rem;
 
 $color-text-body: #545149;
 $color-text-heading: var(--primary);
 $color-text-accent: var(--accent);
 $color-text-inverse: var(--neutral-100);
+
+$color-background: #f4f1ec;
 
 $shadow: 0.25rem 0.25rem 1.25rem gray;
 
@@ -22,4 +26,3 @@ $button-color-default-hover: var(--accent);
 $button-border-radius-default: 2px;
 $button-padding-default: 2em 2em;
 
-$background: #f4f1ec;

@@ -9,10 +9,10 @@
 }
 .header__avatar {
   margin-top: 130px;
-  height: 200px;
+  height: 10em;
 }
 .header__username {
-  font-size: 30px;
+  font-size: 1.1rem;
   margin: 0.5em 0 1em;
 }
 
@@ -37,7 +37,7 @@
 .nav__menu {
   list-style: none;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5em;
 }
 .nav__icon {
@@ -75,7 +75,7 @@
 }
 .new-tweet__error {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #ba3838;
   margin-left: 1em;
@@ -141,15 +141,15 @@
 }
 .tweet__text {
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 0.7em;
   border-bottom: 3px solid dimgray;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .tweet__footer {
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 .tweet__icon {
   margin-left: 5px;
@@ -168,12 +168,11 @@ body {
   background-color: #f4f1ec;
   color: #545149;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 main {
   width: 90%;
-  max-width: 1500px;
   margin: auto;
 }
 

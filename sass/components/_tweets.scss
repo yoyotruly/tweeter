@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .tweet {
   border: 3px solid dimgray;
   border-radius: 3px;
@@ -34,17 +36,17 @@
   }
 
   &__text {
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-weight: $font-weight-bold;
+    margin-bottom: 0.7em;
     border-bottom: 3px solid dimgray;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
   
   &__footer {
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: $font-size-footer;
   }
   
   &__icon {

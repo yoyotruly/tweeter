@@ -27,16 +27,16 @@
   }
 
   &__footer {
-    font-family: 'Bungee', cursive;
+    font-family: $font-family-logo;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   &__error {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 1rem;
-    font-weight: 600;
+    font-family: $font-family-body;
+    font-size: $font-size-footer;
+    font-weight: $font-weight-bold;
     color: #ba3838;
     margin-left: 1em;
     margin-right: auto;

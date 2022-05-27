@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .nav {
   height: 120px;
   width: 100%;
@@ -12,15 +14,15 @@
   padding-right: 1.5em;
 
   &__logo {
-    font-family: 'Bungee', cursive;
-    font-size: 2rem;
+    font-family: $font-family-logo;
+    font-size: $font-size-logo;
     margin-bottom: 0.5em;
   }
 
   &__menu {
     list-style: none;
     text-align: center;
-    font-size: 1rem;
+    font-size: $font-size-heading;
     margin-bottom: 0.5em;
   }
 

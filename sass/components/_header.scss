@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .header {
   height: 400px;
   background-color: #daa520;
@@ -9,11 +11,11 @@
 
   &__avatar {
     margin-top: 130px;
-    height: 200px;
+    height: 10em;
   }
 
   &__username {
-    font-size: 30px;
+    font-size: $font-size-heading;
     margin: 0.5em 0 1em;
   }
 }
