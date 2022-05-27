@@ -131,39 +131,28 @@ nav {
   margin-bottom: 30px;
   padding: 20px;
 }
-
-.tweet:hover {
-  box-shadow: 5px 5px rgba(64, 87, 161, 0.4588235294);
-}
-
 .tweet > * {
   padding-left: 10px;
   padding-right: 10px;
 }
-
 .tweet__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .tweet__user {
   display: flex;
   align-items: center;
 }
-
 .tweet__user > * {
   margin-right: 0.5em;
 }
-
 .tweet__avatar {
   height: 2.7em;
 }
-
 .tweet__handle {
   color: rgba(64, 87, 161, 0.4588235294);
 }
-
 .tweet__text {
   font-weight: 600;
   margin-bottom: 10px;
@@ -171,19 +160,13 @@ nav {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-
 .tweet__footer {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
 }
-
 .tweet__icon {
   margin: 3px;
-}
-
-.tweet__icon:hover {
-  color: goldenrod;
 }
 
 html {
