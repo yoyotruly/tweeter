@@ -16,7 +16,7 @@
   margin: 0.5em 0 1em;
 }
 
-nav {
+.nav {
   height: 120px;
   width: 100%;
   position: fixed;
@@ -29,33 +29,21 @@ nav {
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
-
-.logo {
+.nav__logo {
   font-family: "Bungee", cursive;
-  font-size: 45px;
+  font-size: 2rem;
   margin-bottom: 0.5em;
 }
-
-.navbar {
+.nav__menu {
   list-style: none;
   text-align: center;
-  font-size: 24px;
+  font-size: 1rem;
   margin-bottom: 0.5em;
 }
-
-.fa-angles-down {
+.nav__icon {
   color: red;
 }
 
-.fa-angles-down:hover {
-  animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-  50% {
-    transform: translateY(15%);
-  }
-}
 .new-tweet {
   margin-top: 30px;
   margin-bottom: 50px;

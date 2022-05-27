@@ -1,4 +1,4 @@
-nav {
+.nav {
   height: 120px;
   width: 100%;
   position: fixed;
@@ -10,29 +10,33 @@ nav {
   align-items: flex-end;
   padding-left: 1.5em;
   padding-right: 1.5em;
+
+  &__logo {
+    font-family: 'Bungee', cursive;
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+  }
+
+  &__menu {
+    list-style: none;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+  }
+
+  // &__tagline {
+  //   font-size: 1rem;
+  // }
+
+  &__icon {
+    color: red;
+  }
 }
 
-.logo {
-  font-family: 'Bungee', cursive;
-  font-size: 45px;
-  margin-bottom: 0.5em;
-}
+// .fa-angles-down:hover {
+//   animation: bounce 1s infinite;
+// }
 
-.navbar {
-  list-style: none;
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 0.5em;
-}
-
-.fa-angles-down {
-  color: red;
-}
-
-.fa-angles-down:hover {
-  animation: bounce 1s infinite;
-}
-
-@keyframes bounce {
-  50% {transform: translateY(15%);}
-}
+// @keyframes bounce {
+//   50% {transform: translateY(15%);}
+// }
