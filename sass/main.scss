@@ -1,0 +1,37 @@
+@use "abstracts" as *;
+
+@use "components";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $background;
+  color: $color-text-body;
+  font-family: $font-family-body;
+  font-size: $font-size-body;
+}
+
+main {
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+}
+
+b {
+  font-weight: $font-weight-bold;
+}
+
+
+// @media screen and (min-width: 786px) {
+
+// }
+
+// @media screen and (min-width: 1024px) {
+
+// }

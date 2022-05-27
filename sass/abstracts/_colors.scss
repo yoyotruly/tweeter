@@ -1,0 +1,21 @@
+$light-theme: (
+  "primary": #4056A1,
+  "secondary": #daa520,
+  "accent": #ba3838,
+  "neutral": (
+    "100": #f4f1ec,
+    "900": dimgray
+  ),
+  "shadow": (0, 0, 0)
+);
+
+$dark-themes: (
+  "primary": #2e313b,
+  "secondary": #daa520,
+  "accent": #ba3838,
+  "neutral": (
+    "100": #f4f1ec,
+    "900": dimgray
+  ),
+  "shadow": (0, 0, 0)
+);
