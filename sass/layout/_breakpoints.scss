@@ -1,0 +1,49 @@
+@use "../abstracts" as *;
+
+@media screen and (min-width: 1024px) {
+
+  body {
+    display: flex;
+    margin-top: 120px;
+  }
+
+  .header {
+    flex-grow: 1;
+    min-width: 20%;
+    
+    &__outer-container {
+      height: 100%;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+    }
+
+    &__inner-container {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      margin-right: 3rem;
+    }
+
+    &__menu {
+      display: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 1.125rem;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  main {
+    margin: 0 6rem;
+    max-width: 1000px;
+  }
+
+  aside {
+    display: inherit;
+    background-color: lightgray;
+    flex-grow: 1;
+    width: 20%;
+  }
+
+}
