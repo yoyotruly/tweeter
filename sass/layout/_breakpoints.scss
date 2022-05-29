@@ -1,5 +1,17 @@
 @use "../abstracts" as *;
 
+@media screen and (max-width: 768px) {
+  .nav {
+    &__logo {
+      font-size: 1.75rem;
+    }
+  
+    &__menu {
+      font-size: $font-size-body;
+    }
+  }
+}
+
 @media screen and (min-width: 1024px) {
 
   body {

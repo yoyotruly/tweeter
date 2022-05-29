@@ -216,6 +216,14 @@ aside {
   color: #daa520;
 }
 
+@media screen and (max-width: 768px) {
+  .nav__logo {
+    font-size: 1.75rem;
+  }
+  .nav__menu {
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   body {
     display: flex;
