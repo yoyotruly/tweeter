@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5em 1.5em;
+  padding: 0.6em 1.5em;
   border-radius: 2px;
   
   &--primary {
@@ -12,8 +12,8 @@
   }
 
   &--muted {
-    background-color: #adb1be;
-    // color: white;
+    // background-color: #ccbd98;
+    color: white;
   }
 
   &:hover,
