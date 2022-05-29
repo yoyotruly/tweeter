@@ -6,32 +6,35 @@
   padding: 0.6em 1.5em;
   border-radius: 2px;
   
+  &:hover,
+  &:active {
+    box-shadow: 2px 2px 2px gray;
+  }
+
   &--primary {
     background-color: #4056A1;
     color: white;
   }
 
   &--muted {
-    // background-color: #ccbd98;
     color: white;
-  }
 
-  &:hover,
-  &:active {
-    // background-color: #374e98;
-    box-shadow: 1px 1px 1px gray;
-    // background: #374e98 radial-gradient(circle, transparent 1%, #374e98 1%) center/15000%;s
+    &:hover,
+    &:active {
+      background-color: #86888a;
+    }
   }
 
   &--composer {
-    width: 55px;
-    height: 55px;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     position: fixed;
     bottom: 5%;
     right: 5%;
     box-shadow: 0 0 3px gray;
   }
+
 }
 
 
