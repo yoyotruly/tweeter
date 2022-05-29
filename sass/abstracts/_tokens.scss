@@ -1,6 +1,3 @@
-@use "colors";
-
-// $active-theme: $light-theme;
 
 $font-family-body: "Source Sans Pro", sans-serif;
 $font-family-logo: "Bungee", cursive;
@@ -18,6 +15,8 @@ $color-text-accent: var(--accent);
 $color-text-inverse: var(--neutral-100);
 
 $color-background: #f4f1ec;
+$color-primary: #4056A1;
+$color-accent: #daa520;
 
 $shadow: 0.25rem 0.25rem 1.25rem gray;
 

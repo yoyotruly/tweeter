@@ -222,12 +222,13 @@ aside {
     display: flex;
     justify-content: flex-end;
     position: relative;
+    flex-shrink: 1;
   }
   .header__inner-container {
     display: flex;
     align-items: center;
     position: fixed;
-    margin-right: 3rem;
+    margin-right: 1%;
   }
   .header__menu {
     display: inherit;
@@ -238,7 +239,7 @@ aside {
   }
 
   main {
-    margin: 0 5.5rem;
+    margin: 0 min(4%, 80px);
     max-width: 800px;
   }
 
