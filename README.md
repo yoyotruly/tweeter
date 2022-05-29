@@ -24,10 +24,12 @@ $ npm start
 Vist the website at `http://localhost:8080` in your browser
 
 ## Features
-- Unlimited URL shortening creation
-- Full capability to view, edit and delete URLs with safe user permission
-- Secure registration, login and logout with encrypted passwords and cookie session handling
-- Link analytics tracking, e.g. total clicks, unique vistors (WIP)
+- Responsive design for desktop screens and mobile/tablet views
+- Incremental tweet load using AJAX without the need to refresh page
+- Write a new tweet toggle form
+- Auto-resize tweet input area and real-time character count
+- Tweet validation with animated error prompt
+- Added security to prevent cross site scripting
 
 ## Sample Pages
 |Desktop|Mobile|
