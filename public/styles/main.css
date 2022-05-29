@@ -227,17 +227,19 @@ aside {
     min-width: 15%;
   }
   .header__outer-container {
-    height: 100%;
+    min-height: max(100%, 100vh);
     display: flex;
     justify-content: flex-end;
     position: relative;
-    flex-shrink: 1;
   }
   .header__inner-container {
     display: flex;
     align-items: center;
     position: fixed;
     margin-right: 1%;
+  }
+  .header__avatar {
+    margin-top: 30px;
   }
   .header__menu {
     display: inherit;
@@ -253,20 +255,26 @@ aside {
   }
 
   .sidebar {
-    display: inherit;
-    flex-direction: column;
+    display: flex;
     align-items: flex-start;
-    gap: 3rem;
-    background-color: #dddbd6;
     flex-grow: 1;
     min-width: 20%;
   }
-  .sidebar__container {
-    margin-left: 3rem;
-    max-width: 320px;
+  .sidebar__outer-container {
+    background-color: #dddbd6;
+    width: 100%;
+    min-height: max(100%, 100vh);
+    flex-grow: 1;
+    position: relative;
+    z-index: -1;
   }
-  .sidebar__container > * {
-    margin-bottom: 2em;
+  .sidebar__inner-container {
+    max-width: 500px;
+    margin: 0 3%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
   .sidebar__title {
     font-size: 1.5rem;

@@ -12,11 +12,10 @@
     min-width: 15%;
     
     &__outer-container {
-      height: 100%;
+      min-height: max(100%, 100vh);
       display: flex;
       justify-content: flex-end;
       position: relative;
-      flex-shrink: 1;
     }
 
     &__inner-container {
@@ -24,6 +23,10 @@
       align-items: center;
       position: fixed;
       margin-right: 1%;
+    }
+
+    &__avatar {
+      margin-top: 30px;
     }
 
     &__menu {
@@ -41,21 +44,27 @@
   }
 
   .sidebar {
-    display: inherit;
-    flex-direction: column;
+    display: flex;
     align-items: flex-start;
-    gap: 3rem;
-    background-color: $color-accent-muted-100;
     flex-grow: 1;
     min-width: 20%;
-
-    &__container {
-      margin-left: 3rem;
-      max-width: 320px;
-
-      > * {
-        margin-bottom: 2em;
-      }
+    
+    &__outer-container {
+      background-color: $color-accent-muted-100;
+      width: 100%;
+      min-height: max(100%, 100vh);
+      flex-grow: 1;
+      position: relative;
+      z-index: -1;
+    }
+    
+    &__inner-container {
+      max-width: 500px;
+      margin: 0 3%;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
     }
 
     &__title {
