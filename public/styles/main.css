@@ -7,7 +7,7 @@
   border-radius: 2px;
 }
 .btn:hover, .btn:active {
-  box-shadow: 2px 2px 2px gray;
+  box-shadow: 3px 3px gray;
 }
 .btn--primary {
   background-color: #4056A1;
@@ -17,7 +17,7 @@
   color: white;
 }
 .btn--muted:hover, .btn--muted:active {
-  background-color: #86888a;
+  background-color: #a4a3a0;
 }
 .btn--composer {
   width: 3.5rem;
@@ -95,7 +95,7 @@ aside {
   top: 0;
   z-index: 999;
   background: #4056A1;
-  color: #FFFFFF;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -117,6 +117,15 @@ aside {
   color: red;
 }
 
+.fa-angles-down:hover {
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(15%);
+  }
+}
 .new-tweet {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -204,7 +213,7 @@ aside {
   margin-right: 5px;
 }
 .tweet__icon:hover {
-  color: goldenrod;
+  color: #daa520;
 }
 
 @media screen and (min-width: 1024px) {

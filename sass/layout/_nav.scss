@@ -6,8 +6,8 @@
   position: fixed;
   top: 0;
   z-index: 999;
-  background: #4056A1;
-  color: #FFFFFF;
+  background: $color-primary;
+  color: $color-text-inverse;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -27,19 +27,15 @@
     margin-bottom: 0.5em;
   }
 
-  // &__tagline {
-  //   font-size: 1rem;
-  // }
-
   &__icon {
     color: red;
   }
 }
 
-// .fa-angles-down:hover {
-//   animation: bounce 1s infinite;
-// }
+.fa-angles-down:hover {
+  animation: bounce 1s infinite;
+}
 
-// @keyframes bounce {
-//   50% {transform: translateY(15%);}
-// }
+@keyframes bounce {
+  50% {transform: translateY(15%);}
+}

@@ -10,19 +10,16 @@ $font-size-logo: 2.5rem;
 $font-size-footer: 0.8rem;
 
 $color-text-body: #545149;
-$color-text-heading: var(--primary);
-$color-text-accent: var(--accent);
-$color-text-inverse: var(--neutral-100);
+$color-text-inverse: white;
 
 $color-background: #f4f1ec;
 $color-primary: #4056A1;
+$color-primary-muted: #4057a175;
 $color-accent: #daa520;
+$color-accent-muted-100: #dddbd6;
+$color-accent-muted-200: #a4a3a0;
+$color-box-shadow: gray;
 
-$shadow: 0.25rem 0.25rem 1.25rem gray;
-
-$button-color-default: var(--primary);
-$button-text-default: var(--neutral);
-$button-color-default-hover: var(--accent);
-$button-border-radius-default: 2px;
-$button-padding-default: 2em 2em;
+$button-border-radius: 2px;
+$button-padding: 0.6em 1.5em;
 

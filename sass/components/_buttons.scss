@@ -1,27 +1,29 @@
+@use "../abstracts" as *;
+
 .btn {
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.6em 1.5em;
-  border-radius: 2px;
+  padding: $button-padding;
+  border-radius: $button-border-radius;
   
   &:hover,
   &:active {
-    box-shadow: 2px 2px 2px gray;
+    box-shadow: 3px 3px $color-box-shadow;
   }
 
   &--primary {
-    background-color: #4056A1;
-    color: white;
+    background-color: $color-primary;
+    color: $color-text-inverse;
   }
 
   &--muted {
-    color: white;
+    color: $color-text-inverse;
 
     &:hover,
     &:active {
-      background-color: #86888a;
+      background-color: $color-accent-muted-200;
     }
   }
 
@@ -32,7 +34,7 @@
     position: fixed;
     bottom: 5%;
     right: 5%;
-    box-shadow: 0 0 3px gray;
+    box-shadow: 0 0 3px $color-box-shadow;
   }
 
 }
