@@ -270,7 +270,7 @@ aside {
   }
   .sidebar__inner-container {
     max-width: 500px;
-    margin: 0 3%;
+    margin-left: 3%;
     position: fixed;
     display: flex;
     flex-direction: column;

@@ -1,18 +1,34 @@
-# Tweeter Project
+# Tweeter
+Tweeter is a simple, single-page Twitter clone. Tech stack involved include
+- Front-end: HTML, CSS, SASS, JS, jQuery and AJAX
+- Back-end: Node, Express
 
-Tweeter is a simple, single-page Twitter clone.
+## Table of Content
+- [Get Started](#get-started)
+- [Features](#features)
+- [Sample Pages](#sample-pages)
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+## Get Started
+Before starting, [download and install Node.js](!https://nodejs.org/en/download/), if you don't have it installed already. Then run the following command in your terminal:
 
-## Getting Started
+Install dependencies:  
+```
+$ npm install
+```
 
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+Start the server  
+```
+$ npm start
+```
 
-## Dependencies
+Vist the website at `http://localhost:8080` in your browser
 
-- Express
-- Node 5.10.x or above
+## Features
+- Unlimited URL shortening creation
+- Full capability to view, edit and delete URLs with safe user permission
+- Secure registration, login and logout with encrypted passwords and cookie session handling
+- Link analytics tracking, e.g. total clicks, unique vistors (WIP)
+
+## Sample Pages
+### Home Page
+![home](/docs/home.png)
