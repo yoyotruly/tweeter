@@ -44,11 +44,11 @@
       <div class="header__inner-container">
         <img class="header__avatar" id="header__avatar" src="/images/profile-hex.png">
         <h2 class="header__username"><b>Yoyo</b> Yang</h2>
-        <ul class="header__menu">
-          <li>Button1</li>
-          <li>Button2</li>
-          <li>Button3</li>
-          <li>Tweet</li>
+        <ul class="header__menu bare-list">
+          <li class="btn btn--muted">Button1</li>
+          <li class="btn btn--muted">Button2</li>
+          <li class="btn btn--muted">Button3</li>
+          <li class="btn btn--primary">Tweet</li>
         </ul>
       </div>
     </div>
@@ -61,7 +61,7 @@
         <label class="new-tweet__label" for="new-tweet__text">What are you humming about?</label>
         <textarea class="new-tweet__text" id="new-tweet__text" name="text" rows=1></textarea>
         <footer class="new-tweet__footer">
-          <button class="btn new-tweet__btn" type="submit">Tweet</button>
+          <button class="btn btn--primary new-tweet__btn" type="submit">Tweet</button>
           <p class="new-tweet__error" id="new-tweet__error"></p>
           <output class="new-tweet__counter" name="counter" for="new-tweet__text">140</output>
         </footer>
@@ -71,7 +71,7 @@
     <section id="tweets-container">
     </section>
 
-    <div class="btn composer-btn">
+    <div class="btn btn--primary btn--composer">
       <i class="fa-solid fa-pen"></i>
     </div>
 

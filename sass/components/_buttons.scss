@@ -1,17 +1,19 @@
 .btn {
-  background-color: gray;
-  color: white;
   border: none;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.5em 1.5em;
   border-radius: 2px;
-
+  
   &--primary {
     background-color: #4056A1;
+    color: white;
   }
 
   &--muted {
-    background-color: lightgray;
+    background-color: #adb1be;
+    // color: white;
   }
 
   &:hover,
@@ -20,16 +22,17 @@
     box-shadow: 1px 1px 1px gray;
     // background: #374e98 radial-gradient(circle, transparent 1%, #374e98 1%) center/15000%;s
   }
+
+  &--composer {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    box-shadow: 0 0 3px gray;
+  }
 }
 
 
 
-.composer-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  box-shadow: 0 0 3px gray;
-}
