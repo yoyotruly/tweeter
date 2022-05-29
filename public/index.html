@@ -29,6 +29,7 @@
 </head>
 
 <body>
+
   <nav class="nav">
     <h1 class="nav__logo">tweeter</h1>
     <ul class="nav__menu" id="composer">
@@ -36,14 +37,23 @@
       <li class="nav__icon"><i class="fa-solid fa-angles-down"></i></li>
     </ul>
   </nav>
+  
 
   <header class="header">
-    <img class="header__avatar" id="header__avatar" src="/images/profile-hex.png">
-    <h2 class="header__username"><b>Yoyo</b> Yang</h2>
+    <div class="header__container">
+      <img class="header__avatar" id="header__avatar" src="/images/profile-hex.png">
+      <h2 class="header__username"><b>Yoyo</b> Yang</h2>
+      <ul class="header__menu">
+        <li>Button1</li>
+        <li>Button2</li>
+        <li>Button3</li>
+        <li>Tweet</li>
+      </ul>
+    </div>
   </header>
 
-  <main>
-
+  <main>  
+    
     <section class="new-tweet" id="new-tweet">
       <form class="new-tweet__form" action="/tweets" method="post" id="new-tweet__form">
         <label class="new-tweet__label" for="new-tweet__text">What are you humming about?</label>
@@ -64,6 +74,11 @@
     </div>
 
   </main>
+
+  <aside>
+    <p>article</p>
+  </aside>
+
 </body>
 
 </html>
