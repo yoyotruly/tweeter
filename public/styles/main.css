@@ -1,18 +1,90 @@
-.header {
-  height: 400px;
+.btn {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.6em 1.5em;
+  border-radius: 2px;
+}
+.btn:hover, .btn:active {
+  box-shadow: 2px 2px 2px gray;
+}
+.btn--primary {
+  background-color: #4056A1;
+  color: white;
+}
+.btn--muted {
+  color: white;
+}
+.btn--muted:hover, .btn--muted:active {
+  background-color: #86888a;
+}
+.btn--composer {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  box-shadow: 0 0 3px gray;
+}
+
+.bare-list {
+  list-style: none;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-left: 0;
+}
+
+html {
+  box-sizing: border-box;
+  height: auto;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f4f1ec;
+  color: #545149;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+
+b {
+  font-weight: 600;
+}
+
+aside {
+  display: none;
+}
+
+.header__outer-container {
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   background-color: #daa520;
+  width: 100%;
+}
+.header__inner-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+}
+.header__menu {
+  display: none;
 }
 .header__avatar {
   margin-top: 130px;
-  height: 10em;
+  height: 10rem;
 }
 .header__username {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 0.5em 0 1em;
 }
 
@@ -21,6 +93,7 @@
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 999;
   background: #4056A1;
   color: #FFFFFF;
   display: flex;
@@ -31,13 +104,13 @@
 }
 .nav__logo {
   font-family: "Bungee", cursive;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5em;
 }
 .nav__menu {
   list-style: none;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 0.5em;
 }
 .nav__icon {
@@ -80,34 +153,6 @@
   color: #ba3838;
   margin-left: 1em;
   margin-right: auto;
-}
-.new-tweet__btn {
-  border-radius: 2px;
-  padding: 0.35em 0.8em;
-}
-
-.btn {
-  background-color: #4056A1;
-  color: white;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn:hover {
-  background-color: #374e98;
-  box-shadow: 1px 1px 1px gray;
-}
-
-.composer-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  box-shadow: 0 0 3px gray;
 }
 
 .tweet {
@@ -156,26 +201,66 @@
   margin-right: 5px;
 }
 
-html {
-  box-sizing: border-box;
-}
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    margin-top: 120px;
+  }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+  .header {
+    flex-grow: 1;
+    min-width: 15%;
+  }
+  .header__outer-container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .header__inner-container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-right: 3rem;
+  }
+  .header__menu {
+    display: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+    font-weight: 600;
+  }
 
-body {
-  background-color: #f4f1ec;
-  color: #545149;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1rem;
-}
+  main {
+    margin: 0 5.5rem;
+    max-width: 800px;
+  }
 
-main {
-  width: 90%;
-  margin: auto;
-}
-
-b {
-  font-weight: 600;
+  .sidebar {
+    display: inherit;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    background-color: #dddbd6;
+    flex-grow: 1;
+    min-width: 20%;
+  }
+  .sidebar__container {
+    margin-left: 3rem;
+    max-width: 320px;
+  }
+  .sidebar__container > * {
+    margin-bottom: 2em;
+  }
+  .sidebar__title {
+    font-size: 1.5rem;
+  }
+  .sidebar__headline {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+  }
+  .sidebar__footer {
+    font-size: 0.8rem;
+  }
 }

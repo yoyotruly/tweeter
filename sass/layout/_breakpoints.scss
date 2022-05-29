@@ -9,7 +9,7 @@
 
   .header {
     flex-grow: 1;
-    min-width: 20%;
+    min-width: 15%;
     
     &__outer-container {
       height: 100%;
@@ -35,15 +35,41 @@
   }
 
   main {
-    margin: 0 6rem;
-    max-width: 1000px;
+    margin: 0 5.5rem;
+    max-width: 800px;
   }
 
-  aside {
+  .sidebar {
     display: inherit;
-    background-color: lightgray;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+    background-color: #dddbd6;
     flex-grow: 1;
-    width: 20%;
+    min-width: 20%;
+
+    &__container {
+      margin-left: 3rem;
+      max-width: 320px;
+
+      > * {
+        margin-bottom: 2em;
+      }
+    }
+
+    &__title {
+      font-size: $font-size-heading-large;
+    }
+
+    &__headline {
+      font-size: $font-size-heading-regular;
+      font-weight: $font-weight-bold;
+      margin-bottom: 0.5em;
+    }
+
+    &__footer {
+      font-size: $font-size-footer;
+    }
   }
 
 }
