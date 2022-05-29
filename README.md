@@ -30,5 +30,6 @@ Vist the website at `http://localhost:8080` in your browser
 - Link analytics tracking, e.g. total clicks, unique vistors (WIP)
 
 ## Sample Pages
-### Home Page
-![home](/docs/home.png)
+|Desktop|Mobile|
+|---|---|
+|![desktop](/docs/desktop.png)|![mobile](/docs/mobile.png)|
