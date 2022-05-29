@@ -81,7 +81,11 @@ const validateTweet = (tweetText) => {
 loadTweets("/tweets");
 
 /* toggle new tweet section */
-$("#composer").on("click", function() {
+$("#nav__composer").on("click", function() {
+  $("#new-tweet").toggle();
+})
+
+$("#button__composer").on("click", function() {
   $("#new-tweet").toggle();
 })
 
